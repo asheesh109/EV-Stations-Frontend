@@ -1,59 +1,72 @@
 # Frontend - Internship Screening Task
 
-This repository contains the frontend code for the internship task.
-
-## 🌐 Live Deployed App
-
-👉 [Frontend Live URL](https://ev-powerstations.web.app/)
+This repository contains the **frontend** code for the internship screening task.
 
 ---
 
-## 🚀 Deployment
+## 🌐 Live Deployed App
 
-The frontend is deployed on **Firebase Hosting**.
+👉 [Frontend Live URL](https://your-frontend-app-url.com)
 
-### Steps to deploy on Firebase Hosting:
+---
+
+## 🚀 Deployment (Firebase Hosting / Vercel / Render)
+
+### Firebase Hosting Deployment Steps
 
 1. Install Firebase CLI:
+   ```bash
+   npm install -g firebase-tools
+Login to Firebase:
 
-  npm install -g firebase-tools
+bash
+Copy
+Edit
+firebase login
+Initialize Firebase in your project folder:
 
-  2.Login to Firebase:
+bash
+Copy
+Edit
+firebase init
+Select Hosting
 
-  firebase login
+Choose an existing Firebase project (or create new)
 
-  3.Initialize Firebase in your project folder:
+Set public directory (e.g., build or dist)
 
-  firebase init
+Configure as a single-page app if using React, Vue, or Angular
 
-  4.Select Hosting
+Build the frontend:
 
-  Choose existing Firebase project or create new
+bash
+Copy
+Edit
+npm run build
+Deploy:
 
-  Set public directory (e.g., build or dist)
+bash
+Copy
+Edit
+firebase deploy
+✅ After deployment, you will get the public hosting URL.
 
-  Choose single-page app if using React, Vue, Angular
-
-  5.Build your frontend project:
-
-  npm run build
-
-  6.Deploy:
-
-  firebase deploy
-
-✅ After deployment, Firebase will give you the hosting URL.
-
-🛠️ Local Setup
+🛠 Local Setup
 To run the frontend locally:
 
+bash
+Copy
+Edit
 git clone https://github.com/yourusername/frontend-repo.git
 cd frontend-repo
 npm install
 npm start
-
 📦 Technologies Used
-React 
+React (or Vue / Angular / HTML-CSS-JS)
 
-Firebase Hosting 
+Firebase Hosting (or Vercel / Render)
 
+📑 Deliverables
+GitHub Repository → Frontend GitHub Link
+
+Deployed Frontend URL → https://your-frontend-app-url.com
