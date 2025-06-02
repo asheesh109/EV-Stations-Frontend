@@ -1,0 +1,267 @@
+:root {
+  --green: #27ae60;
+  --green-dark: #219150;
+  --green-light: #eafaf1;
+  --surface: #ffffff; /* Pure white background */
+  --text: #22223b;
+  --border: #e0e0e0;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(39, 174, 96, 0.08);
+}
+
+.station-details-green {
+  background: var(--surface); /* White background */
+  min-height: 100vh;
+  padding: 0 0 40px 0;
+}
+
+/* Clear button styling - positioned at top */
+.clear-btn-green {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  transition: background 0.2s;
+}
+.clear-btn-green:hover {
+  background: #c0392b;
+}
+
+.details-header-green {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 20px 24px 20px; /* Extra top padding to account for clear button */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.details-header-green h1 {
+  font-size: 2rem;
+  color: var(--green); /* Green headings */
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.logo-green {
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.back-btn-green {
+  background: var(--green-light);
+  color: var(--green-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+  order: -1; /* Position back button first */
+  margin-right: auto;
+}
+.back-btn-green:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.status-badge-green {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--green-light);
+  color: var(--green-dark);
+  border: 1.5px solid var(--green);
+  text-transform: capitalize;
+  margin-left: auto;
+}
+.status-badge-green.occupied {
+  background: #fffbe6;
+  color: #b8860b;
+  border-color: #f1c40f;
+}
+.status-badge-green.outofservice {
+  background: #fdecea;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.details-section-green {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  padding: 32px 32px 18px 32px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.details-row-green {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.details-label-green {
+  color: var(--green-dark);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.details-value-green {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.details-actions-green {
+  display: flex;
+  gap: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.edit-btn-green {
+  background: var(--green);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.edit-btn-green:hover {
+  background: var(--green-dark);
+  text-decoration: none;
+  color: #fff;
+}
+
+.delete-btn-green {
+  background: #e74c3c;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.delete-btn-green:hover {
+  background: #c0392b;
+}
+
+.empty-green {
+  text-align: center;
+  color: var(--green-dark);
+  margin: 60px 0;
+  padding: 0 20px;
+}
+.empty-green .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.empty-green h3 {
+  color: var(--green-dark);
+  margin: 10px 0;
+}
+.empty-green p {
+  color: var(--text);
+  opacity: 0.7;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #eafaf1;
+  border-radius: 50%;
+  border-top-color: var(--green);
+  animation: spin 1s linear infinite;
+  margin-bottom: 18px;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.loading-text {
+  color: var(--green-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .details-header-green {
+    max-width: 98vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .back-btn-green {
+    order: 0;
+    margin-right: 0;
+    align-self: flex-start;
+  }
+  
+  .details-header-green h1 {
+    order: 1;
+    width: 100%;
+  }
+  
+  .status-badge-green {
+    order: 2;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  
+  .details-section-green,
+  .details-actions-green {
+    max-width: 98vw;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .details-row-green {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .details-actions-green {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,200 @@
+:root {
+  --green: #27ae60;
+  --green-dark: #1e8449;
+  --green-light: #d5f5e3;
+  --surface: #ffffff;
+  --text: #2c3e50; /* Darker text color for better contrast */
+  --text-light: #7f8c8d; /* For less important text */
+  --border: #bdc3c7;
+  --input-bg: #f8f9fa;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(39, 174, 96, 0.15);
+}
+
+.station-form-green {
+  background: var(--surface);
+  min-height: 100vh;
+  padding: 0 0 40px 0;
+  color: var(--text); /* Set default text color */
+}
+
+.clear-btn-green {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  transition: background 0.2s;
+}
+.clear-btn-green:hover {
+  background: #c0392b;
+}
+
+.form-header-green {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 80px 20px 24px 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-header-green h1 {
+  font-size: 2rem;
+  color: var(--green-dark); /* Darker green for better contrast */
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.logo-green {
+  font-size: 2rem;
+  color: var(--green-dark);
+}
+
+.back-btn-green {
+  background: var(--green-light);
+  color: var(--green-dark);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+  order: -1;
+  margin-right: auto;
+}
+.back-btn-green:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.form-green {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 32px 32px 18px 32px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row-green {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.form-row-green label {
+  color: var(--green-dark);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-row-green input,
+.form-row-green select {
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  background: var(--input-bg);
+  color: var(--text);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-row-green input::placeholder {
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.form-row-green input:focus,
+.form-row-green select:focus {
+  border: 1.5px solid var(--green);
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+  background: #fff;
+}
+
+.form-row-green select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232ecc71' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.error-green {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.submit-btn-green {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 14px 0;
+  border-radius: var(--radius);
+  font-weight: 700;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 16px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.submit-btn-green:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.submit-btn-green:hover:not(:disabled) {
+  background: #186a3b;
+}
+
+@media (max-width: 600px) {
+  .form-header-green {
+    max-width: 98vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .back-btn-green {
+    order: 0;
+    margin-right: 0;
+    align-self: flex-start;
+  }
+
+  .form-header-green h1 {
+    order: 1;
+    width: 100%;
+  }
+
+  .form-green {
+    max-width: 98vw;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 24px 20px;
+  }
+}
