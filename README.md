@@ -17,15 +17,18 @@ This repository contains the **frontend** code for the internship screening task
 1. Install Firebase CLI:
    ```bash
    npm install -g firebase-tools
-Login to Firebase:
+
+2.Login to Firebase:
 
  ```bash
 firebase login
-Initialize Firebase in your project folder:
+
+3.Initialize Firebase in your project folder:
+
  ```bash
 firebase init
 
-Select Hosting
+4.Select Hosting
 
 Choose an existing Firebase project (or create new)
 
@@ -33,19 +36,23 @@ Set public directory (e.g., build or dist)
 
 Configure as a single-page app if using React, Vue, or Angular
 
-Build the frontend:
+5.Build the frontend:
+
  ```bash
 npm run build
 
-Deploy:
+6.Deploy:
+
  ```bash
 firebase deploy
 
 ✅ After deployment, you will get the public hosting URL.
 
 🛠 Local Setup
+
 To run the frontend locally:
- ```basht
+
+ ```bash
 git clone https://github.com/yourusername/frontend-repo.git
 cd frontend-repo
 npm install
