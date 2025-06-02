@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
 import StationList from '../Components/Stations/StationList';
-import StationDetails from '../components/Stations/StationDetails';
-import StationForm from '../components/Stations/StationForm';
+import StationDetails from '../Components/Stations/StationDetails';
+import StationForm from '../Components/Stations/StationForm';
 import '../styles/Dashboard.css';
 
 export default function Dashboard() {
