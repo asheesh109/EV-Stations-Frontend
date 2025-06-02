@@ -1,45 +1,59 @@
+🌐 Live Links
+Web-App Live URL: https://ev-powerstations.web.app/
 
-
----
-
-## 🌐 Live Links
-
-- **Web-App Live URL:** https://ev-powerstations.web.app/  
-
-
----
-
-## 📁 Repository Structure
-
-/frontend → Frontend (React + Vite)
-/backend → Backend (Node.js + Express)
-
-yaml
+📁 Repository Structure
+bash
 Copy
 Edit
+/frontend → Frontend codebase (React + Vite)
+🛠 Frontend Setup & Deployment
+✅ Steps to Run Locally and Deploy
+Clone the frontend repository from GitHub:
 
----
+bash
+Copy
+Edit
+git clone https://github.com/asheesh109/EV-Stations-Frontend.git
+Navigate to the frontend directory:
 
-## 🛠 Frontend Setup & Deployment
+bash
+Copy
+Edit
+cd EV-Stations-Frontend/frontend
+Install dependencies:
 
-✅ **Steps:**  
-1. Clone the frontend repository from GitHub.  
-2. Navigate to the `/frontend` folder.  
-3. Install dependencies using npm or yarn.  
-4. Run the local development server to test.  
-5. Build the project for production.  
-6. Deploy the build folder to any cloud platform (Firebase Hosting, Vercel, Render, etc.).  
-7. After deployment, note the public frontend URL.
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+Run the local development server:
 
-✅ **Tech Used:**  
-- React + Vite  
-- Firebase Hosting  
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+Build the project for production:
 
-✅ **Deliverable:**  
-- GitHub: https: https://github.com/asheesh109/EV-Stations-Frontend 
-- Live Frontend: https://ev-powerstations.web.app/
+bash
+Copy
+Edit
+npm run build
+# or
+yarn build
+Deploy the contents of the dist (or build) folder to your preferred hosting platform such as Firebase Hosting, Vercel, Render, etc.
 
----
+After deployment, note the publicly accessible frontend URL.
 
+✅ Tech Stack
+Frontend: React + Vite
 
+Hosting: Firebase Hosting
 
+✅ Deliverables
+GitHub Repository: https://github.com/asheesh109/EV-Stations-Frontend
+
+Live Frontend URL: https://ev-powerstations.web.app/
