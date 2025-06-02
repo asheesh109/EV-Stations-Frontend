@@ -19,16 +19,12 @@ This repository contains the **frontend** code for the internship screening task
    npm install -g firebase-tools
 Login to Firebase:
 
-bash
-Copy
-Edit
+ ```bash
 firebase login
 Initialize Firebase in your project folder:
-
-bash
-Copy
-Edit
+ ```bash
 firebase init
+
 Select Hosting
 
 Choose an existing Firebase project (or create new)
@@ -38,35 +34,29 @@ Set public directory (e.g., build or dist)
 Configure as a single-page app if using React, Vue, or Angular
 
 Build the frontend:
-
-bash
-Copy
-Edit
+ ```bash
 npm run build
-Deploy:
 
-bash
-Copy
-Edit
+Deploy:
+ ```bash
 firebase deploy
+
 ✅ After deployment, you will get the public hosting URL.
 
 🛠 Local Setup
 To run the frontend locally:
-
-bash
-Copy
-Edit
+ ```basht
 git clone https://github.com/yourusername/frontend-repo.git
 cd frontend-repo
 npm install
 npm start
-📦 Technologies Used
-React (or Vue / Angular / HTML-CSS-JS)
 
-Firebase Hosting (or Vercel / Render)
+📦 Technologies Used
+React/Vite
+
+Firebase Hosting 
 
 📑 Deliverables
-GitHub Repository → Frontend GitHub Link
+GitHub Repository → https://github.com/asheesh109/EV-Stations-Frontend
 
-Deployed Frontend URL → https://your-frontend-app-url.com
+Deployed Frontend URL → https://ev-powerstations.web.app/
