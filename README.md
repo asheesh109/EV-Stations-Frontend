@@ -16,31 +16,31 @@ The frontend is deployed on **Firebase Hosting**.
 
 1. Install Firebase CLI:
 
-npm install -g firebase-tools
+  npm install -g firebase-tools
 
-2.Login to Firebase:
+  2.Login to Firebase:
 
-firebase login
+  firebase login
 
-3.Initialize Firebase in your project folder:
+  3.Initialize Firebase in your project folder:
 
-firebase init
+  firebase init
 
-4.Select Hosting
+  4.Select Hosting
 
-Choose existing Firebase project or create new
+  Choose existing Firebase project or create new
 
-Set public directory (e.g., build or dist)
+  Set public directory (e.g., build or dist)
 
-Choose single-page app if using React, Vue, Angular
+  Choose single-page app if using React, Vue, Angular
 
-5.Build your frontend project:
+  5.Build your frontend project:
 
-npm run build
+  npm run build
 
-6.Deploy:
+  6.Deploy:
 
-firebase deploy
+  firebase deploy
 
 ✅ After deployment, Firebase will give you the hosting URL.
 
