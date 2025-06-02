@@ -1,12 +1,59 @@
-# React + Vite
+# Frontend - Internship Screening Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend code for the internship task.
 
-Currently, two official plugins are available:
+## 🌐 Live Deployed App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Frontend Live URL](https://ev-powerstations.web.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Deployment
+
+The frontend is deployed on **Firebase Hosting**.
+
+### Steps to deploy on Firebase Hosting:
+
+1. Install Firebase CLI:
+
+npm install -g firebase-tools
+
+2.Login to Firebase:
+
+firebase login
+
+3.Initialize Firebase in your project folder:
+
+firebase init
+
+4.Select Hosting
+
+Choose existing Firebase project or create new
+
+Set public directory (e.g., build or dist)
+
+Choose single-page app if using React, Vue, Angular
+
+5.Build your frontend project:
+
+npm run build
+
+6.Deploy:
+
+firebase deploy
+
+✅ After deployment, Firebase will give you the hosting URL.
+
+🛠️ Local Setup
+To run the frontend locally:
+
+git clone https://github.com/yourusername/frontend-repo.git
+cd frontend-repo
+npm install
+npm start
+
+📦 Technologies Used
+React 
+
+Firebase Hosting 
+
