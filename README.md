@@ -1,3 +1,5 @@
+
+
 ---
 
 ## 🌐 Live Links
@@ -17,7 +19,7 @@
 
 ✅ **Steps:**  
 1. Clone the frontend repository from GitHub.  
-2. Navigate to the /frontend folder.  
+2. Navigate to the `/frontend` folder.  
 3. Install dependencies using npm or yarn.  
 4. Run the local development server to test.  
 5. Build the project for production.  
@@ -33,4 +35,6 @@
 - Live Frontend: https://ev-powerstations.web.app/
 
 ---
+
+
 
