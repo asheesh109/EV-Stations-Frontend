@@ -4,10 +4,8 @@
 
 ## 🌐 Live Links
 
-- **Frontend Live URL:** https://ev-powerstations.web.app/  
-- **Backend API URL:** https://your-backend-api-url.com  
-- *(Optional)* **Swagger Docs:** https://your-backend-api-url.com/swagger  
-- *(Optional)* **Postman Collection:** https://postman.com/collection-link  
+- **Web-App Live URL:** https://ev-powerstations.web.app/  
+
 
 ---
 
